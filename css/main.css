@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+/* unvisited link */
+.links:link {
+    color: #880E4F;
+    text-decoration: none;
+}
+
+/* visited link */
+.links:visited {
+    color: #880E4F;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.links:hover {
+    color: #EC407A;
+    text-decoration: none;
+}
+
+.instruction-card{
+    border-radius: 15px;
+    padding-top:15px;
+    display: flex;
+}
+.instruction-text{
+    display: inline-block;
+    align-self: flex-end;
+}
+.row{
+    padding-bottom: :10px;
+}
+.card{
+    padding:15px;
+    margin-bottom: 10px;
+}
+
+.plain{
+    background-color: #fff;
+}
+
+.blush{
+    background-color: #FCE4EC;
+}
+
+
+.bg-company-red {
+    background-color: #880E4F;
+}
