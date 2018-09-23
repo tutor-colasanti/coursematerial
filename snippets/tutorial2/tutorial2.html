@@ -1,6 +1,6 @@
 <div class="jumbotron">
-    <h1>Tutorial 1</h1>
-    <h4>Using GitHub</h4>
+    <h1>Tutorial 2</h1>
+    <h4>Boxes</h4>
 </div>
 
 
@@ -14,27 +14,148 @@
                 <div class="col-sm-6">
                     <img class="img-fluid" src="img/tutorial2/cms01.png" alt="Git01">
                 </div>
-                <div class="col-sm-6 instruction-card  blush">
-                    <div class="instruction-text">
-                        <p> Each section in the website is mirrored in the directory structure</p>
+                    <div class="col-sm-6 instruction-card  blush">
+                        <div class="instruction-text">
+                            <p> Each section in the website is mirrored in the directory structure</p>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-    <div class="card plain">
-        <h4>Name repository</h4>
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="img-fluid" src="img/tutorial1/git02.png" alt="Git02">
+
+
+            <div class="card plain">
+                <h4>Name repository</h4>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="img/tutorial2/contentmanagment.png" alt="Git02">
             </div>
-            <div class="col-sm-6 instruction-card  blush">
-                <div class="instruction-text">
-                    <p>NOTE tick Initialize this repository with a README</p>
-                    <p><img class="img-fluid" src="img/tutorial1/git03.png" alt="Git03"></p>
-                    <p>This makes adding new files from the GitHub webpage much easier</p>
-                    <p><img class="img-fluid" src="img/tutorial1/git05.png" alt="Git05"></p>
-                    <p>Remember to click Create repository</p>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>Have a folder for this tutorial and with i it a seperate folder for the css file</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
+                <h1>CSS</h1>
+                 <p>Controlling how your web page looks</p>
+
+                <div class="card plain">
+                    <h4>Elements</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <pre>
+                            <code>
+    body {
+        background-color: #0D47A1;
+    }
+
+    h1 {
+        color: #E3F2FD;
+    }
+
+                            </code>
+                        </pre>
+                        </div>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>Place this code in your main.css file.</p>
+                                <p>Here we are using the two elements 'body' and 'h1' and setting their color.</p>
+                                <p>See <a  class="links" href="https://www.w3schools.com/css/css_colors.asp"> w3school color</a> for other ways to do color </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card plain">
+                    <h4>div and class</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <pre>
+                                        <code>
+    body {
+        background-color: #0D47A1;
+    }
+
+    h1 {
+        color: #E3F2FD;
+    }
+
+    .panel{
+        background-color:#ff6347;
+        width: 400px;
+    }
+
+                                        </code>
+                                    </pre>
+                        </div>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>In your index.html</p>
+                                <pre>
+                                            <code>
+&ltdiv class="panel"&gt &lt/&gt
+                                            </code>
+                                        </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card plain">
+                    <h4>margin padding border </h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <pre>
+                        <code>
+    .panel{
+        background-color:#ff6347;
+        width: 400px;
+        margin: 40px;
+        padding: 20px;
+        border: solid;
+        border-color: red;
+        border-width: 10px;
+    }
+
+                        </code>
+                    </pre>
+                        </div>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>See <a  class="links" href="https://www.w3schools.com/css/css_boxmodel.asp"> w3school box</a> for more info on box model </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card plain">
+                    <h4>float </h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <pre>
+                        <code>
+    .panel-float{
+        float: left;
+        background-color:#ff6347;
+        width: 400px;
+        margin: 40px;
+        padding: 20px;
+        border: solid;
+        border-color: red;
+        border-width: 10px;
+    }
+
+                        </code>
+                    </pre>
+                        </div>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>See <a  class="links" href="https://www.w3schools.com/css/css_float.asp"> w3school float</a> for more info on css float </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
