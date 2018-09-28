@@ -184,3 +184,28 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="card plain">
+                    <h4>float inside div "hack" </h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <pre>
+                        <code>
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+                        </code>
+                    </pre>
+                        </div>
+                        <div class="col-sm-6 instruction-card  blush">
+                            <div class="instruction-text">
+                                <p>When using nested floats ( ie two class="column" div inside a class="row" div each "column" with float set to left) there is a tendency for the "column" div not to align properly inside the "row". This problem can be alleviated by adding this code to your css file fro the "row" class definition</p>
+                                <p>See <a  class="links" href="https://www.w3schools.com/css/css_float.asp"> w3school float</a> for more info on css float  and what they call "The clearfix Hack" </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
