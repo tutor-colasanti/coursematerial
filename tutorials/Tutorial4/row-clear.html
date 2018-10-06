@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Row clear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            border: solid;
+            border-width: 10px;
+            border-color: #ff0000;
+        }
+        .row::after{
+            content: "";
+            clear:both;
+            display: table;
+        }
+
+        .col-40 {
+            width: 40%;
+            background-color: #00ff00;
+            height: 300px;
+            float: left;
+        }
+
+        .col-60 {
+            width: 60%;
+            background-color: #00ffff;
+            height: 300px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-40">
+            Col1
+        </div>
+        <div class="col-60">
+            Col2
+        </div>
+       
+    </div>
+    <p>See, with the inclusion of:</p>
+    <pre>
+        <code>
+                .row::after{
+                    content: "";
+                    clear:both;
+                    display: table;
+                }
+        </code> 
+    </pre>
+    <p>How the two columns are now contained with in the row</p>
+</body>
+
+</html>
