@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ClickME</title>
+<style>
+	.a-button{
+				background-color: rgb(100, 100, 200);
+				color: rgb(250,250,250);
+				transition: 1s;
+				padding: 10px;
+				cursor: pointer;
+	}
+</style>
+</head>
+<body>
+<div class="a-button" id="btn1" onclick="colorFunction()">
+	ClickMe!
+</div>
+
+<script type="text/javascript">
+function colorFunction(){
+	element = document.getElementById("btn1");
+	console.log(element.style.backgroundColor);
+	if (element.style.backgroundColor != 'rgb(200, 100, 100)'){
+		element.style.backgroundColor="rgb(200, 100, 100)"	;
+		element.innerHTML="RED";
+	}else{
+		element.style.backgroundColor="rgb(100, 100, 200)";
+		element.innerHTML="BLUE";
+	}
+}
+</script>
+</body>
+</html>
