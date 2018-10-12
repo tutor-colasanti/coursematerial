@@ -1,0 +1,82 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    margin:0px;
+    height:1200px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(50,50,50,0.9);
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 60px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;	
+	cursor:pointer;
+	color:#eeeeee;
+}
+
+.navbar{
+	overflow: hidden;
+	opacity: 1;
+	top:0px;
+	position:fixed;
+	width:100%;
+	margin:0px;
+	padding-left: 5px;
+	padding-top:8px;
+	padding-bottom:8px:
+   transition: 0.3s;
+   background-color: rgba(250,250,250,0.1);
+}
+
+.sidenav-button{
+     padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eeeeee;
+    display: block;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.sidenav-button:hover {
+	background-color: #dddddd;
+    color: #555555;
+}
+
+.page{
+	max-width:660px;
+	margin:auto;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #eeeeee;
+}
+
+img{
+	 display: block;
+    margin-left: 15%;
+    margin-right: auto;
+    max-width: 300px;
+    border:solid;
+    border-color: rgba(255,255,255,0.8);
+    border-width: 5px;
+}
+
+p {
+  text-indent: 1.5em;
+}
+	
+	
