@@ -1,35 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-<meta charset="utf-8" />
-<title>ClickME</title>
-<style>
-	.a-button{
-				background-color: rgb(100, 100, 200);
-				color: rgb(250,250,250);
-				transition: 1s;
-				padding: 10px;
-				cursor: pointer;
-	}
-</style>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta charset="utf-8">
+  <title>ClickME</title>
+  <style>
+        .a-button{
+                                background-color: rgb(100, 100, 200);
+                                color: rgb(250,250,250);
+                                transition: 1.5s;
+                                padding: 10px;
+                                cursor: pointer;
+        }
+  </style>
 </head>
 <body>
-<div class="a-button" id="btn1" onclick="colorFunction()">
-	ClickMe!
-</div>
-
-<script type="text/javascript">
-function colorFunction(){
-	element = document.getElementById("btn1");
-	console.log(element.style.backgroundColor);
-	if (element.style.backgroundColor != 'rgb(200, 100, 100)'){
-		element.style.backgroundColor="rgb(200, 100, 100)"	;
-		element.innerHTML="RED";
-	}else{
-		element.style.backgroundColor="rgb(100, 100, 200)";
-		element.innerHTML="BLUE";
-	}
-}
-</script>
+  <div class="a-button" id="btn1" onclick="colorFunction()">
+    ClickMe!
+  </div>
+  <script type="text/javascript">
+  function colorFunction(){
+    element = document.getElementById("btn1");
+    console.log(element.style.backgroundColor);
+    if (element.style.backgroundColor != 'rgb(200, 100, 100)'){
+        element.style.backgroundColor="rgb(200, 100, 100)"      ;
+        element.innerHTML="RED";
+    }else{
+        element.style.backgroundColor="rgb(100, 100, 200)";
+        element.innerHTML="BLUE";
+        }
+  }
+  </script>
 </body>
 </html>
