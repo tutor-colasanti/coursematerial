@@ -40,7 +40,7 @@ body{
         Side   
     </div>
     
-<div class="a-buton"onclick="slideOut()">
+<div class="a-button" onclick="slideOut()">
 Some more text
 </div>
     <script>
