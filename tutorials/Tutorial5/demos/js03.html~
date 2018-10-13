@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+body{
+    font-family:  Arial, snas-serif;
+}
+
+.a-block{
+    color: #eeeeee;
+    padding:20px;
+    min-width: 40px;
+    max-width:80px;
+    margin-bottom: 20px;
+}
+
+.go{
+    background-color: #55dd55;
+}
+
+.a-button{
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+    <div  class="a-button a-block go" onclick="clickMe()">
+        Click Me !    
+    </div>
+    <p>A</p>
+    <p>B</p>
+    <p>C</p>
+    <script>
+        function clickMe() {
+        	x=document.getElementsByTagName("p");
+        	console.log("lenght",x.length);
+        	//console.log(x.length);
+        	for (i=0;i<x.length;i++) {
+        		console.log(i)
+        	}
+        }
+    </script>
+</body>
+</html>

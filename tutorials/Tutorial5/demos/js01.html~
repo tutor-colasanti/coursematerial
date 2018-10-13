@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+body{
+    font-family:  Arial, snas-serif;
+}
+.a-button{
+    background-color: #55dd55;
+    color: #eeeeee;
+    padding:20px;
+    min-width: 40px;
+    max-width:80px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+</style>
+
+</head>
+<body>
+    <div  class="a-button" onclick="clickMe()">
+        Click Me !    
+    </div>
+    
+    <div id="change1">
+        Some Text    
+    </div>
+    <script>
+        function clickMe() {
+        	console.log("Hello");
+        	x=document.getElementById("change1");
+        	console.log(x);
+        	x.style.backgroundColor="rgb(10,150,10)";
+        	console.log(x.innerHTML)
+        }
+    </script>
+</body>
+</html>
