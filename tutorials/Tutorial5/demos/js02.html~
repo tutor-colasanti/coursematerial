@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title></title>
+<title>JS02</title>
 <style>
 body{
     font-family:  Arial, snas-serif;
@@ -24,12 +24,9 @@ body{
     overflow-x: hidden;
 }
 
-.go{
-    background-color: #55dd55;
-}
 
 .a-button{
-    cursor: pointer;
+    cursor: pointer
 }
 
 </style>
@@ -46,7 +43,7 @@ Some more text
     <script>
         function slideOut() {
             element = document.getElementById("sidebar")
-        	element.style.width="205px";
+        	element.style.width="250px";
         }
         function slideIn() {
             element = document.getElementById("sidebar")

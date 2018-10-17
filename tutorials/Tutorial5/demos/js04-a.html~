@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav-link{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+/*  float: none;*/
+}
+
+.topnav-link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#icon {
+  display: none;
+}
+
+@media screen and (max-width:600){
+	.topnav-link{
+		float:none;	
+	}
+	#icon{
+		display:block	
+	}
+	
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+	<a href="javascript:void(0);" id="icon" class="topnav-link" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="#home" class="topnav-link">Home</a>
+  <a href="#news" class="topnav-link">News</a>
+  <a href="#contact" class="topnav-link">Contact</a>
+  <a href="#about" class="topnav-link">About</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>

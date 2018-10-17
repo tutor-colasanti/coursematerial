@@ -2,28 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title></title>
+<title>JS01</title>
 <style>
 body{
     font-family:  Arial, snas-serif;
 }
-.a-button{
-    background-color: #55dd55;
-    color: #eeeeee;
-    padding:20px;
-    min-width: 40px;
-    max-width:90px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
+
 
 </style>
 
 </head>
 <body>
-    <div  class="a-button" onclick="clickMe()">
+    <button onclick="clickMe()">
         Click Me !    
-    </div>
+    </button>
     
     <div id="change1">
         Some Text    

@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Advanced web design</title>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="img/logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+	<title>Advanced Web Design</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -15,54 +15,54 @@
 
 
 
-    <nav class="navbar  navbar-expand-sm bg-company-red navbar-dark fixed-top">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#" onclick="loadSnippet('home')">AWD</a>
+	<nav class="navbar  navbar-expand-sm bg-company-red navbar-dark fixed-top">
+	
+		<a class="navbar-brand" href="#" onclick="loadSnippet('home')">AWD</a>
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="loadSnippet('home')">Home</a>
-                </li>                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="loadSnippet('resources')">Resources</a>
-                </li>
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-       Tutorials
-     </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#"onclick="loadSnippet('tutorialsabout')">About</a>
-                        <a class="dropdown-item" href="#"onclick="loadSnippet('tutorial1/tutorial1')">Tutorial 1: GitHub</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('tutorial2/tutorial2')">Tutorial 2: Layout</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('tutorial3/tutorial3')">Tutorial 3: Revision</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('tutorial4/tutorial4')">Tutorial 4: Responsive</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 5: Javascript II</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 6: Project I </a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 7: jQuery I</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 8: jQueryII</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 9: Bootstrap I</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 10: Boostrap II</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 11: Project II</a>
-                        <a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 12: Wrap up</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#" onclick="loadSnippet('home')">Home</a>
+					</li>                <li class="nav-item">
+						<a class="nav-link" href="#" onclick="loadSnippet('resources')">Resources</a>
+					</li>
+					<!-- Dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							Tutorials
+						</a>
+						<div class="dropdown-menu">
+								<a class="dropdown-item" href="#"onclick="loadSnippet('tutorialsabout')">About</a>
+								<a class="dropdown-item" href="#"onclick="loadSnippet('tutorial1/tutorial1')">Tutorial 1: GitHub</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('tutorial2/tutorial2')">Tutorial 2: Layout</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('tutorial3/tutorial3')">Tutorial 3: Revision</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('tutorial4/tutorial4')">Tutorial 4: Responsive</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('tutorial5/tutorial5')">Tutorial 5: Javascript</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 6: Project I </a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 7: jQuery I</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 8: jQueryII</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 9: Bootstrap I</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 10: Boostrap II</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 11: Project II</a>
+								<a class="dropdown-item" href="#" onclick="loadSnippet('underconstruction')">Tutorial 12: Wrap up</a>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</nav>
 
-    <div id="div1" class = "container-fluid" style="margin-top:80px"></div>
+	<div id="div1" class = "container-fluid" style="margin-top:80px"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

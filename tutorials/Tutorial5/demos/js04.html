@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JS02</title>
+<style>
+
+
+.a-block{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(50,50,50,0.5);
+    color:#eeeeee;
+    transition: width 1.0s;
+    overflow-x: hidden;
+}
+
+
+.a-button{
+    cursor: pointer
+}
+
+</style>
+
+</head>
+<body>
+    <div  class=" a-block " id="sidebar" >
+        Side  
+        <p class="a-button" onclick="slideIn()">Close</p> 
+        <p class="a-button" onclick="openDiv('a')">A</p> 
+        <p class="a-button" onclick="openDiv('b')">B</p> 
+        <p class="a-button" onclick="openDiv('c')">C</p> 
+    </div>
+    
+<div class="a-button" onclick="slideOut()">Open</div>
+<div class="mytext" id="a">Text A</div>
+<div class="mytext" id="b" style="display:none">Text B</div>
+<div class="mytext" id="c" style="display:none">Text C</div>
+
+    <script>
+        function slideOut() {
+            element = document.getElementById("sidebar")
+        	element.style.width="250px";
+        }
+        function slideIn() {
+            element = document.getElementById("sidebar")
+        	element.style.width="0px";
+        }
+        
+        function openDiv(divName) {
+	 			var i, tabcontent, tablinks;
+    			tabcontent = document.getElementsByClassName("mytext");
+    			for (i = 0; i < tabcontent.length; i++) {
+        			tabcontent[i].style.display = "none";
+    			}
+    			element = document.getElementById(divName);
+    			element.style.display = "block";
+			}
+    </script>
+</body>
+</html>
