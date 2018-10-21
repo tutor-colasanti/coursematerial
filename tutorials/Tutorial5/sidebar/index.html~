@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">		
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 			<div id="London" class="tabcontent" style="display:block">
 				<h3>London</h3>
 				<img src="img/london.jpg" alt="">
-					<p>London orem ipsum dolor sit amet, consecteteur. Per nonummy senectus pretium sollicitudin nostra tortor, ipsum fusce cubilia et, mollis. Vel lorem elit pharetra mus, quam lobortis hymenaeos a. Orci adipiscing libero, accumsan eni cursus non nisi dis montes. Ultrices pretium torquent aliquet ante leo nunc dignissim cum. Litora urna mollis facilisis lobortis, at. Primis nec, natoque. Pharetra donec ultrices nec, felis malesuada. Euismod conubia. Massa nam primis quam suspendisse rhoncus proin ut mattis sed nostra mauris etiam lobortis neque, pellentesque. Velit id dignissim a, ridiculus.
+					<p>London orem ipsum dolor sit amet, consecteteur. Per nonummy senectus pretium sollicitudin nostra tortor, ipsum fusce cubilia et, mollis. Vel lorem elit   pharetra mus, quam lobortis hymenaeos a. Orci adipiscing libero, accumsan eni cursus non nisi dis montes. Ultrices pretium torquent aliquet ante leo nunc dignissim cum. Litora urna mollis facilisis lobortis, at. Primis nec, natoque. Pharetra donec ultrices nec, felis malesuada. Euismod conubia. Massa nam primis quam suspendisse rhoncus proin ut mattis sed nostra mauris etiam lobortis neque, pellentesque. Velit id dignissim a, ridiculus.
 					</p>
 					<p>
 						Vehicula morbi ipsum primis neque, morbi a, litora amet, eros ridiculus ve, convallis. Libero nam, id cursus facilisis adipiscing per proin. Quisque nisl convallis tellus, faucibus suspendisse. Mus, laoreet at, morbi eros. At placerat. Hac fermentum massa id tempus consequat. Ac tortor nam ligula at posuere orci, a risus laoreet fermentum. Aptent proin. Ve, suspendisse enim, urna fames hendrerit curabitur magna suscipit hymenaeos, mauris inceptos suspendisse mus. Maecenas lacus id donec ve. Tincidunt eros porta fusce donec. Vel metus. Sociis cras, proin. Sociis magnis fringilla sapien parturient sollicitudin. Hendrerit odio nam laoreet at, ac hac id. Senectus habitant, et non quis ad justo. Per nunc hac facilisis sociis senectus.
