@@ -7,12 +7,22 @@
 <div class="container-fluid">
     <h1>Responsive JavaScript</h1>
     <p> In this section we will produce our first smart-phone responsive web page. This will form the basis of your mini project. The working version of this can be found  <a class="links" href="https://tutor-colasanti.github.io/FirstResponder/js01.html">HERE</a></p>
+     <img class="img-fluid" src="img/tutorial6/qrcode.png" alt="Box">
     <p> A pdf of the slides can be found  <a class="links" href="snippets/tutorial6/AWD06.pdf">HERE</a> </p>
     <p> Examples of the three stages to the final version can be found:</p>
     <p><a class="links" href="tutorials/Tutorial6/demos/js01.html">js01</a> </p>
     <p><a class="links" href="tutorials/Tutorial6/demos/js02.html">js02</a> </p>
     <p><a class="links" href="tutorials/Tutorial6/demos/js03.html">js03</a> </p>
     <p>The W3School example of a responsive top nave can be found <a class="links" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav">HERE</a> </p>
+<p>The link to the font that gets the "Hamburger" icon</p>
+<pre>
+                <code>
+   
+   &ltlink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt
+
+&ltdiv class="fa fa-bars"&gt&lt/div&gt
+                </code>
+            </pre>
 </div>
 
  
