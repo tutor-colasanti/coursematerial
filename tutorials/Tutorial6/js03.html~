@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            border: solid;
+            border-width: 10px;
+            border-color: #ff0000;
+        }
+        .row::after{
+            content: "";
+            clear:both;
+            display: table;
+        }
+
+        .col-40 {
+            width: 40%;
+            background-color: #00ff00;
+            height: 300px;
+            float: left;
+        }
+
+        .col-60 {
+            width: 60%;
+            background-color: #00ffff;
+            height: 300px;
+            float: left;
+        }
+   
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav-link{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.topnav-link:hover {
+  background-color: #ddd;
+  color: black;
+  cursor:pointer;
+}
+
+#icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.topnav-link{
+	  display: none;
+  	  float: none;
+	}
+   #icon{
+    display: block;
+  }
+  .responsive{
+  	display: block;
+  }
+   .col-40{
+		width: 100%;
+		float:none;
+	}
+    .col-60{
+		width: 100%;
+		float: none;
+	}
+
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+	<div  id="icon" class="topnav-link" onclick="myFunction()">
+    <div class="fa fa-bars"></div>
+  </div>
+  <div class="topnav-link" onclick="openRow('row1')">Row1</div>
+  <div class="topnav-link" onclick="openRow('row2')">Row2</div>
+  <div class="topnav-link" onclick="openRow('row3')">Row3</div>
+</div>
+
+    <div id= "row1" class="row tabcontent" style="display:block">
+        <div class="col-40">
+            Row 1 Col1
+        </div>
+        <div class="col-60">
+            Row 1 Col2
+        </div>
+       
+    </div>
+
+
+    <div id="row2" class="row tabcontent" style="display:none">
+        <div class="col-40">
+            Row 2 Col1
+        </div>
+        <div class="col-60">
+            Row 2 Col2
+        </div>
+       
+    </div>
+    
+    <div id="row3" class="row tabcontent" style="display:none">
+        <div class="col-40">
+            Row 3 Col1
+        </div>
+        <div class="col-60">
+            Row 3 Col2
+        </div>
+       
+    </div>
+<script>
+function myFunction(){
+	var elements = document.getElementsByClassName("topnav-link");
+	for(var i=0; i< elements.length; i++){
+		if (elements[i].className === "topnav-link") {
+        elements[i].className += " responsive";
+    	} else {
+        elements[i].className = "topnav-link";
+    	}
+	}
+}
+
+
+function openRow(rowName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    element = document.getElementById(rowName);
+    element.style.display = "block";
+}
+</script>
+
+</body>
+</html>

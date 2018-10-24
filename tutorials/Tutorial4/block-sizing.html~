@@ -19,7 +19,6 @@
             color: #ffffff;
             padding: 10px;
             border-width: 20px;
-            float:none
             
         }
 
@@ -28,16 +27,15 @@
             height: 200px;
             background-color: #ff0000;
             color: #ffffff;
-            float:none;
         }
 @media screen and (min-width: 800px) {
     .col1{
 		width: 25%;
-		float: left;
+		float: none;
 	}
     .col2{
 		width: 75%;
-		float: left;
+		float: none;
 	}
 
 }

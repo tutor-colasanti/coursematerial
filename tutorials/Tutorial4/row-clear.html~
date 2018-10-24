@@ -37,11 +37,11 @@
         }
         
  @media screen and (max-width: 600px) {
-    .col-40{
+    .col-25{
 		width: 100%;
 		float:none;
 	}
-    .col-60{
+    .col-75{
 		width: 100%;
 		float: none;
 	}
