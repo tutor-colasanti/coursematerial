@@ -38,7 +38,6 @@ body{
         function clickMe() {
         	x=document.getElementsByTagName("p");
         	console.log("lenght",x.length);
-        	//console.log(x.length);
         	for (i=0;i<x.length;i++) {
         		console.log(x[i])
         	}

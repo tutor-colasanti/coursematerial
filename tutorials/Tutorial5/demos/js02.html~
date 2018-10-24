@@ -4,16 +4,11 @@
 <meta charset="utf-8" />
 <title>JS02</title>
 <style>
-body{
-    font-family:  Arial, snas-serif;
-}
-* {
-    box-sizing: border-box;
-}
+
 
 .a-block{
     height: 100%;
-    width: 0px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
