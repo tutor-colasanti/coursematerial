@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style>
+.show{
+	display:block;
+}
+.hide{
+	display:none;
+}
+</style>
+</head>
+<body>
+<div onclick="hide()">Hide</div>
+<div class="show">A</div>
+<div class="show">B</div>
+<div class="show">C</div>
+<div class="show">D</div>
+
+<script>
+function hide() {
+	var elems = document.getElementsByClassName("show")
+	for (i=0; i< elems.length;i++) {
+		if(elems[i].className ==="show"){
+			elems[i].className+=" hide"		
+		}else{
+		   elems[i].className="show"
+		}	
+	}
+	
+}
+</script>
+</body>
+</html>
