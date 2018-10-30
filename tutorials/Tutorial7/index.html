@@ -16,8 +16,10 @@
     <div class="topnav" id="mainTopnav">
         <a href="#responsive" id="ident">Home</a>
         <a href="#topnav">TopNav</a>
+        <a href="#hyper">Link</a>
         <a href="#anchor">Anchor</a>
-        <a href="#about">About</a>
+        <a href="#display">Display</a>
+        <a href="#ajax">AJAX</a>
         <div class="icon" onclick="showMenu()">
             <i class="fa fa-bars"></i>
         </div>
@@ -35,7 +37,7 @@
             <div class="col-60">
                 <div class="card">
                     <p>
-                        This web page uses all of the responsive web page methods that we have covered todate. It also introduces four methods of content display: Hypertext,Anchor, Hypertext, Display and AJAX. Ues one of these methods in you mini project. They are in order of difficulty, the  hardest being AJAX. Pst your web page ina GitHub page and send me the link. 
+                        This web page uses all of the responsive web page methods that we have covered to date. It also introduces four methods of content display: Hypertext,Anchor, Hypertext, Display and AJAX. Ues one of these methods in you mini project. They are in order of difficulty, the  hardest being AJAX. Pst your web page ina GitHub page and send me the link. 
                     </p>
 
                 </div>
@@ -114,18 +116,19 @@
             </div>
         </div>
 
+
         <div class="row">
-                <a class="anchor" id="anchor"></a>
-                <h3 class="row-heading">Anchor</h3>
+                <a class="anchor" id="hyper"></a>
+                <h3 class="row-heading">Hyperlink</h3>
                 <div class="col-40">
                     <div class="card">
                         <pre>
                             <code>
-&lta href="#home" class="topnav-link">Home</a>
-&lta href="#a" class="topnav-link"&gtA&lt/a&gt
-&lta href="#b" class="topnav-link"&gtB&lt/a&gt
-&lta href="#c" class="topnav-link"&gtC&lt/a&gt                                   
-&lth4 id="a">&lta href="#home"&gtA&lt/a&gt&lt/h4&gt
+&lta href="home.html" class="topnav-link">Home</a>
+&lta href="a.html" class="topnav-link"&gtA&lt/a&gt
+&lta href="b.html" class="topnav-link"&gtB&lt/a&gt
+&lta href="c.html" class="topnav-link"&gtC&lt/a&gt                                   
+&lth4&gtHome&lt/h4&gt
                              </code>
                         </pre>                   
                     </div>
@@ -133,14 +136,179 @@
                 <div class="col-60">
                     <div class="card">
                         <p>
-                                Anchor uses the id type to link to the href of an link tag. You can see an example with a simple version of the top nav. <a href="topnav.html">Here is a link to that version.</a> If you are using a fixed nav bar, as in this demo, you will have to account for an offset. Try it and the have a look online to see if you can come up with a solution. Or look at this code and see if you can work out what it does.   
+                                Hyper link just directs you to another web page.  <a href="topnavhome.html">Here is a link to that version.</a>  
                         </p>
     
                     </div>
                 </div>
             </div>
-    
-    
+
+
+
+            <div class="row">
+                    <a class="anchor" id="anchor"></a>
+                    <h3 class="row-heading">Anchor</h3>
+                    <div class="col-40">
+                        <div class="card">
+                            <pre>
+                                <code>
+    &lta href="#home" class="topnav-link">Home</a>
+    &lta href="#a" class="topnav-link"&gtA&lt/a&gt
+    &lta href="#b" class="topnav-link"&gtB&lt/a&gt
+    &lta href="#c" class="topnav-link"&gtC&lt/a&gt                                   
+    &lth4 id="a">&lta href="#home"&gtA&lt/a&gt&lt/h4&gt
+                                 </code>
+                            </pre>                   
+                        </div>
+                    </div>
+                    <div class="col-60">
+                        <div class="card">
+                            <p>
+                                    Anchor uses the id type to link to the href of an link tag. You can see an example with a simple version of the top nav. <a href="topnav.html">Here is a link to that version.</a> If you are using a fixed nav bar, as in this demo, you will have to account for an offset. Try it and the have a look online to see if you can come up with a solution. Or look at this code and see if you can work out what it does.   
+                            </p>
+        
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="row">
+                        <a class="anchor" id="display"></a>
+                        <h3 class="row-heading">Display</h3>
+                        <div class="col-40">
+                            <div class="card">
+                                <pre>
+                                    <code>
+&ltdiv class="topnav"&gt
+    &lta href="javascript:void(0);" 
+        onclick="openContent('home')" 
+        id="icon" class="topnav-link" &gt
+        &ltdiv class="fa fa-bars"&gt&lt/div&gt
+    &lt/a&gt
+    &lta  href="javascript:void(0);" 
+        onclick="openContent('home')"class="topnav-link"
+        &gtHome&lt/a&gt
+    &lta  href="javascript:void(0);" 
+        onclick="openContent('a')" class="topnav-link"
+        &gtA&lt/a&gt
+    &lta  href="javascript:void(0);" 
+        onclick="openContent('b')" class="topnav-link"
+        &gtB&lt/a&gt
+    &lta  href="javascript:void(0);" 
+        onclick="openContent('c')" class="topnav-link"
+        &gtC&lt/a&gt
+&lt/div&gt
+
+
+
+
+&lth4 class="content" id="home" style="display:block"&gtHome&lt/h4&gt
+&lth4 class="content" id="a" style="display:none"&gtA&lt/h4&gt
+&lth4 class="content" id="b" style="display:none"&gtB&lt/h4&gt
+&lth4 class="content" id="c" style="display:none"&gtC&lt/h4&gt
+
+&ltscript&gt
+function showMenu() {
+    var elements = document.getElementsByClassName("topnav-link");
+    for (var i = 0; i &lt elements.length; i++) {
+        if (elements[i].className === "topnav-link") {
+            elements[i].className += " responsive";
+        } else {
+            elements[i].className = "topnav-link";
+        }
+    }
+}
+
+function openContent(cntName) {
+    cnt = document.getElementsByClassName("content");
+    for (var i = 0; i &lt cnt.length; i++) {
+        cnt[i].style.display = "none";
+    }
+    element = document.getElementById(cntName);
+    element.style.display = "block";
+}
+&lt/script&gt         
+                                </code>
+                                </pre>                   
+                            </div>
+                        </div>
+                        <div class="col-60">
+                            <div class="card">
+                                <p>
+                                        Display loads all of the page content up but hids sections of it using “display:none”. It then uses JavaScript to hide all of the content and only show the single element selected. This is quite complicated so if you want to try this as me to run through it with you.<a href="topnavshow.html">HERE</a> is a link to a version that does this.   
+                                </p>
+            
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="row">
+                            <a class="anchor" id="ajax"></a>
+                            <h3 class="row-heading">AJAX</h3>
+                            <div class="col-40">
+                                <div class="card">
+                                    <pre>
+                                        <code>
+&ltdiv class="topnav"&gt
+        &lta href="javascript:void(0);"
+         onclick="openContent('home')" 
+         id="icon" class="topnav-link" &gt
+            &ltdiv class="fa fa-bars"&gt&lt/div&gt
+        &lt/a&gt
+        &lta  href="javascript:void(0);" 
+        onclick="loadSnippet('home')"
+        class="topnav-link"&gtHome&lt/a&gt
+        &lta  href="javascript:void(0);" 
+        onclick="loadSnippet('a')" 
+        class="topnav-link"&gtA&lt/a&gt
+        &lta  href="javascript:void(0);" 
+        onclick="loadSnippet('b')" 
+        class="topnav-link"&gtB&lt/a&gt
+        &lta  href="javascript:void(0);" 
+        onclick="loadSnippet('c')" 
+        class="topnav-link"&gtC&lt/a&gt
+    &lt/div&gt
+
+
+&ltdiv id="div1"&gt&lt/div&gt
+
+
+
+&ltscript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt&lt/script&gt
+&ltscript&gt
+    function showMenu() {
+        var elements = document.getElementsByClassName("topnav-link");
+        for (var i = 0; i &lt elements.length; i++) {
+            if (elements[i].className === "topnav-link") {
+                elements[i].className += " responsive";
+            } else {
+                elements[i].className = "topnav-link";
+            }
+        }
+    }
+
+    function loadSnippet(fileName){
+        console.log(fileName);
+        $("#div1").load("snippets/"+fileName+".html");
+    }
+    loadSnippet("home")
+    &lt/script&gt        
+                                    </code>
+                                    </pre>                   
+                                </div>
+                            </div>
+                            <div class="col-60">
+                                <div class="card">
+                                    <p>
+                                            AJAX method looks the most simple but is the hardest to understand. If you want to go down this route I will need to tell you about JQuery and about running in a local server. What this does is to load parts of the web page up dynamically. It is very powerful and useful and worth the effort of understanding<a href="topnavajax.html">HERE</a> is a link to a version that does this.   
+                                    </p>
+                
+                                </div>
+                            </div>
+                        </div>
+                
+                    
     </div>
     <script src="js/main.js"></script>
 </body>
