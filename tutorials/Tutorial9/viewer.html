@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/sidebar-rc.css">
+<link rel="stylesheet" href="css/flex-rc.css">
+<link rel="stylesheet" href="css/modal-rc.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+
+
+</style>
+
+<body>
+
+    <div class="sidebar">
+        <div class="side-item" onclick="chooseSlide('img-card')">All</div>
+        <div class="side-item"  onclick="chooseSlide('land')">Land</div>
+        <div class="side-item" onclick="chooseSlide('people')">People</div>
+    </div>
+
+    <div class="content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Responsive Image Grid</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+            <p>Filter images using side bar.</p>
+            <p>View image in light box by clicking on image.</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="img-card people" >
+                    <img src="img/wedding.jpg" onclick="openModal();currentSlide(1)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/rocks.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/falls2.jpg" onclick="openModal();currentSlide(2)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/paris.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/nature.jpg" onclick="openModal();currentSlide(4)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/mist.jpg" onclick="openModal();currentSlide(5)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/paris.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img-card people">
+                    <img src="img/underwater.jpg" onclick="openModal();currentSlide(7)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/ocean.jpg" onclick="openModal();currentSlide(8)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/wedding.jpg" onclick="openModal();currentSlide(1)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/mountainskies.jpg" onclick="openModal();currentSlide(6)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/rocks.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/underwater.jpg" onclick="openModal();currentSlide(7)" style="width:100%">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="img-card people">
+                    <img src="img/wedding.jpg" onclick="openModal();currentSlide(1)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/rocks.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/falls2.jpg" onclick="openModal();currentSlide(2)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/paris.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/nature.jpg" onclick="openModal();currentSlide(4)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/mist.jpg" onclick="openModal();currentSlide(5)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/paris.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="img-card land">
+                    <img src="img/falls2.jpg" onclick="openModal();currentSlide(2)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/mist.jpg" onclick="openModal();currentSlide(5)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/mountainskies.jpg" onclick="openModal();currentSlide(6)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/nature.jpg" onclick="openModal();currentSlide(4)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/ocean.jpg" onclick="openModal();currentSlide(8)" style="width:100%">
+                </div>
+                <div class="img-card people">
+                    <img src="img/paris.jpg" onclick="openModal();currentSlide(3)" style="width:100%">
+                </div>
+                <div class="img-card land">
+                    <img src="img/rocks.jpg" onclick="openModal();currentSlide(9)" style="width:100%">
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL    *********************************************      -->
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="img/wedding.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="img/falls2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="img/paris.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="img/nature.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="img/mist.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="img/mountainskies.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="img/underwater.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="img/ocean.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="img/rocks.jpg" style="width:100%">
+            </div>
+
+
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="js/modal-rc.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

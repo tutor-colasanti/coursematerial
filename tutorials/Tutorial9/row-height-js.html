@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Row height</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .col-40 {
+            width: 40%;
+            border: solid;
+            border-color: blue;
+            float: left;
+            margin:0;
+        }
+
+        .col-60 {
+            width: 60%;
+            border: solid;
+            border-color: green;
+            float: left;
+        }
+
+        .card {
+            background-color:lightblue;
+            margin:10px;
+            padding:5px;
+            border: solid;
+            border-color:orangered;
+        }
+   
+
+        @media screen and (max-width: 600px) {
+            .col-40 {
+                width: 100%;
+                float: none;
+            }
+
+            .col-60 {
+                width: 100%;
+                float: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col col-40">
+            <div class="card">
+                <p>Col1</p>
+                <p>A line</p>
+                <p>A line</p>
+            </div>
+        </div>
+        <div class="col col-60">
+            <div class="card">
+                <p>Col2</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col col-40">
+            <div class="card">
+                    <p>Col1</p>
+                    <p>A line</p>
+                    <p>A line</p>
+                    <p>A line</p>
+                    <p>A line</p>
+                    <p>A line</p>
+            </div>
+        </div>
+        <div class="col col-60">
+            <div class="card">
+                <p>Col</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var rows = document.getElementsByClassName("row")
+        for (i = 0; i < rows.length; i++) {
+            cards = rows[i].getElementsByClassName("card")
+            maxHeight=0;
+            for (j = 0; j < cards.length; j++) {
+                if(cards[j].clientHeight>maxHeight){
+                    maxHeight = cards[j].clientHeight
+                }
+                nHeight = maxHeight+"px"
+                cards[j].style.height = nHeight;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

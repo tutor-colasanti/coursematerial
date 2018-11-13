@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Row table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .table-div {
+            display: table;
+            width: 100%;
+            /* border-spacing: 10px; */
+        }
+
+        .row-table {
+            display: table-row;
+            
+        }
+
+
+        .col-table-40 {
+            width: 40%;
+            display: table-cell;
+            border: solid;
+            border-color: blue;
+        }
+
+        .col-table-60 {
+            width: 60%;
+            display: table-cell;
+            border: solid;
+            border-color: green;
+        }
+
+        .card {
+            background-color: lightgray;
+            margin: 20px;
+            height:100%;
+        }
+
+ @media screen and (max-width: 600px) {
+    .table-div {
+            display: block;
+            width: 100%;
+
+        }
+
+        .row-table {
+            display: block;
+        }
+
+        .col-table-40 {
+            width: 100%;
+            display: block;
+
+        }
+
+        .col-table-60 {
+            width: 100%;
+            display: block;
+
+        }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="table-div">
+        <div class="row-table">
+            <div class="col-table-40">
+                <div class="card">
+                    <p>Col1</p>
+                    <p>A line</p>
+                    <p>A line</p>
+                </div>
+            </div>
+            <div class="col-table-60" >
+                <div class="card">
+                    Col2
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="table-div">
+        <div class="row-table">
+            <div class="col-table-40">
+                <p>Col1</p>
+                <p>A line</p>
+                <p>A line</p>
+                <p>A line</p>
+                <p>A line</p>
+                <p>A line</p>
+            </div>
+            <div class="col-table-60">
+                Col2
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
