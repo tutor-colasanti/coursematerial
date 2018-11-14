@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select id="vehicles" onchange="javascript:selectedVech(this);">
+        <option value="car">Car</option>
+        <option value="lorry">Lorry</option>
+        <option value="van">Van</option>
+    </select>
+
+    <select id="vchtype" onchange="javascript:selectedType(this);">
+    </select>
+    <div id="selectedVch"></div>
+    <div id="selectedTyp"></div>
+
+    <script>
+        vehicles = [];
+        vehicles.push({
+            name: "jag",
+            type: "car"
+        });
+        vehicles.push({
+            name: "bmw",
+            type: "car"
+        });
+        vehicles.push({
+            name: "audi",
+            type: "car"
+        });
+        vehicles.push({
+            name: "ford",
+            type: "van"
+        });
+        vehicles.push({
+            name: "fiat",
+            type: "van"
+        });
+        vehicles.push({
+            name: "daf",
+            type: "lorry"
+        });
+        vehicles.push({
+            name: "sancia",
+            type: "lorry"
+        });
+
+        function selectedVech(list) {
+            console.log(list.options[list.selectedIndex].value);
+            var type = list.options[list.selectedIndex].value;
+            document.getElementById("selectedVch").innerHTML = type;
+            var vtype = document.getElementById("vchtype");
+            vtype.innerHTML="";
+            for( var i=0; i<vehicles.length;i++){
+                console.log(vehicles[i].type,type)
+                if (vehicles[i].type == type){
+                    var opt = document.createElement('option')
+                    opt.innerHTML = vehicles[i].name
+                    console.log(vehicles[i].name)
+                    vtype.appendChild(opt);
+                }
+            }
+        }
+
+        function selectedType(list){
+            console.log(list.options[list.selectedIndex].text);
+            var type = list.options[list.selectedIndex].text;
+            document.getElementById("selectedTyp").innerHTML = type;
+        }
+    </script>
+</body>
+
+</html>
