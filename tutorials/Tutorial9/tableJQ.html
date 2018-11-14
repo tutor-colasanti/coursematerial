@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 16px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <table id="testTable"></table>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $.get("data.csv", function(data, status){
+        parseTxt(data);
+    });
+
+    function parseTxt(text) {
+      var rows = text.split('\n');  // each line is separated ny a cr
+      // write header from first row
+      var table = "<thead><tr>"
+      var cols = rows[0].split(','); // each row is separated by a ,
+      for (var i = 0; i < cols.length; i++) {
+        table += "<th>" + cols[i] + "</th>"
+      }
+
+      // create bulk of table
+      table += "</tr></thead><tbody>"
+      for (var i = 1; i < rows.length; i++) {
+        table += "<tr>"
+        cols = rows[i].split(',');
+        for (var j = 0; j < cols.length; j++) {
+          table += "<td>" + cols[j] + "</td>"
+        }
+        table += "</tr>"
+      }
+      table += "<tbody>"
+      // add the inner table to the table
+      $("#testTable").append(table);
+    }
+  </script>
+</body>
+
+</html>
