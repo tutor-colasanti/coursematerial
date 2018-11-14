@@ -43,6 +43,7 @@
             var cols = rows[0].split(','); // each row is separated by a ,
             for (var i = 0; i < cols.length; i++) {
                 var cell = row.insertCell(i);
+                cell.style.fontWeight = "900"
                 cell.innerHTML = cols[i];
             }
 
