@@ -6,15 +6,18 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: "Lato", sans-serif;
     margin: 0px;
 }
 
+
 .row {
     width: 100%;
     display: table;
 }
+
 
 .row-heading {
     margin-left: 15px;
