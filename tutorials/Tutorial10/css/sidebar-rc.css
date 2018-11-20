@@ -1,0 +1,47 @@
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+       
+    }
+
+    .side-item {
+        display: block;
+        color: black;
+        padding: 16px;
+        cursor: pointer;
+    }
+
+
+
+    .side-item:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    @media (max-width: 600px) {
+
+        .sidebar {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .side-item {
+            float: left;
+        }
+
+        div.content {
+            margin-left: 0;
+        }
+    }

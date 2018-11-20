@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>viewerjs05</title>
+    <link rel="stylesheet" href="css/sidebar-rc.css">
+    <link rel="stylesheet" href="css/flex-rc.css">
+    <link rel="stylesheet" href="css/modal-rc.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="side-item" onclick="chooseSlide('img-card')">All</div>
+        <div class="side-item" onclick="chooseSlide('1940')">1940</div>
+        <div class="side-item" onclick="chooseSlide('1950')">1950</div>
+    </div>
+
+    <div class="content">
+        <!-- Header -->
+        <div class="header">
+            <h1>Responsive Image Grid</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+            <p>Filter images using side bar.</p>
+            <p>View image in light box by clicking on image.</p>
+        </div>
+        <div class="row">
+            <div id="col1" class="column">
+            </div>
+            <div id="col2" class="column">
+            </div>
+            <div id="col3" class="column">
+            </div>
+            <div id="col4" class="column">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL    *********************************************      -->
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div id="modal-content-id"class="modal-content">
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/modal-rc.js"></script>
+    <script type="text/javascript" src="js/loader2.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+ imagesjs.html
+ 
+ Copyright 2018 ric <ric@ASUS>
+ 
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA 02110-1301, USA.
+ 
+ 
+-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>viewerjs</title>
+    <meta name="generator" content="Geany 1.33" />
+    <link rel="stylesheet" href="css/sidebar-rc.css">
+    <link rel="stylesheet" href="css/flex-rc.css">
+    <link rel="stylesheet" href="css/modal-rc.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h4>Images</h4>
+    <div id="images">
+        <div class="row">
+            <div id="col1" class="column">
+            </div>
+            <div id="col2" class="column">
+            </div>
+            <div id="col3" class="column">
+            </div>
+            <div id="col4" class="column">
+            </div>
+            </row>
+        </div>
+
+        <script>
+            var imgFiles = ["timeline_computers_1940.cnc.jpg", "timeline_computers_1949.manchestermark1.jpg",
+                "timeline_computers_1941.bombe.jpg", "timeline_computers_1950.ace.jpg",
+                "timeline_computers_1941.zusez3.jpg", "timeline_computers_1950.era1101.jpg",
+                "timeline_computers_1942.abc.jpg", "timeline_computers_1950.seac-swac.jpg",
+                "timeline_computers_1943.whirlwind.jpg", "timeline_computers_1951.leo.jpg",
+                "timeline_computers_1944.colossus.jpg", "timeline_computers_1951.univacI.jpg",
+                "timeline_computers_1944.harvardmarkI.jpg", "timeline_computers_1952.maniac.jpg",
+                "timeline_computers_1946.eniac.jpg", "timeline_computers_1953.ibm701.jpg",
+                "timeline_computers_1948.manchesterbaby.jpg", "timeline_computers_1953.manchestertc.jpg",
+                "timeline_computers_1948.ssec.jpg", "timeline_computers_1954.ibm650.jpg",
+                "timeline_computers_1949.edsac.jpg"
+            ]
+
+            var element = document.getElementById("col1")
+            console.log(imgFiles.length);
+            for (i = 0; i < 5; i++) {
+                element.innerHTML += '<img src="img/' + imgFiles[i] + ' " style="width:100%">'
+            }
+            var element = document.getElementById("col2")
+            for (i = 5; i < 10; i++) {
+                element.innerHTML += '<img src="img/' + imgFiles[i] + '" style="width:100%">'
+            }
+            var element = document.getElementById("col3")
+            for (i = 10; i < 15; i++) {
+                element.innerHTML += '<img src="img/' + imgFiles[i] + '" style="width:100%">'
+            }
+            var element = document.getElementById("col4")
+            for (i = 15; i < imgFiles.length; i++) {
+                element.innerHTML += '<img src="img/' + imgFiles[i] + '" style="width:100%">'
+            }
+        </script>
+
+</body>
+
+</html>
