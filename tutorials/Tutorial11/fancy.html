@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://fancybox.net/js/fancybox-1.3.4/jquery.fancybox-1.3.4.js"></script>
+    
+    <link rel="stylesheet" href="http://fancybox.net/js/fancybox-1.3.4/jquery.fancybox-1.3.4.css">
+    
+    <!-- Add 'fancybox' class to link where you need to open fancybox -->
+    <a href="img/comp1.jpg" class="fancybox">
+        <img src="img/comp1.jpg" alt="example1">
+    </a>
+    <a href="img/comp2.jpg" class="fancybox">
+        <img src="img/comp2.jpg" alt="example1">
+    </a>
+    <a href="img/comp3.jpg" class="fancybox">
+        <img src="img/comp3.jpg" alt="example1">
+    </a>
+    <a href="img/comp4.jpg" class="fancybox">
+        <img src="img/comp4.jpg" alt="example1">
+    </a>
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $(".fancybox").fancybox();
+        });
+      </script> 
+</body>
+</html>

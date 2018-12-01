@@ -11,7 +11,7 @@ var imgFiles = ["timeline_computers_1940.cnc.jpg", "timeline_computers_1949.manc
 ]
 
 imgDecade = ["1940", "1940", "1950", "1940", "1950", "1940", "1950", "1940", "1950", "1940", "1950", "1940",
-    "1950", "1940", "1950", "1940", "1950", "1940", "1950", "11940"
+    "1950", "1940", "1950", "1940", "1950", "1940", "1950"
 ]
 
     var modElem = document.getElementById("modal-content-id")
